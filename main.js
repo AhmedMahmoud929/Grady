@@ -268,7 +268,7 @@ function copyCodePage(id) {
     setTimeout(function() {
         document.getElementById(id).style.fontSize = "0.8rem";
         document.getElementById(id).style.fontWeight = "400";
-        document.getElementById(id).style.pointerEvents = "auto"
+        document.getElementById(id).style.pointerEvents = "auto";
         document.getElementById(id).value = stebn;
     }, 1500)
 
