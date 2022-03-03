@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grady</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div id="allGrad">
+
+        <div class="top">
+            <i class="fa-solid fa-xmark" onclick="gradPageClose()"></i>
+        </div>
+
+        <div class="main">
+
+            <div id="box0" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box1" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box"></div>
+            <div id="box7" class="box"></div>
+            <div id="box8" class="box"></div>
+            <div id="box9" class="box"></div>
+            <div id="box10" class="box"></div>
+            <div id="box11" class="box"></div>
+            <div id="box12" class="box"></div>
+            <div id="box13" class="box"></div>
+            <div id="box14" class="box"></div>
+            <div id="box15" class="box"></div>
+            <div id="box16" class="box"></div>
+            <div id="box17" class="box"></div>
+        </div>
+
+    </div>
+
+
+    <div class="copyPage">
+        <div class="icon">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/iwaotjbp.json" trigger="loop" delay="300" style="width:250px;height:250px">
+            </lord-icon>
+        </div>
+        <div class="text">
+            COPPIED
+        </div>
+        <div class="thanks">
+            thank you
+        </div>
+    </div>
+    <nav>
+        <div class="content">
+            <div class="logo">
+                <i class="fa-solid fa-brush"></i> GRADY
+            </div>
+            <div class="grad" onclick="gradPage()">All Greadients</div>
+            <div class="mode"><i class="fa-solid fa-cloud-moon"></i></div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="leftArr"><i class="fa-solid fa-angle-left" id="arleft"></i></div>
+
+            <div class="colors">
+
+                <div class="l">
+
+                    <div class="icon">
+
+
+                        <div id="colorPickerLeft"></div>
+                    </div>
+
+                    <input class="val" value="#667eea" type="text" id="clr1" onclick="copyClr(this.id)" autocomplete="off" spellcheck="false">
+
+                </div>
+
+                <div class="mid">
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+
+                <div class="r">
+
+                    <input class="val" value="#764ba2" type="text" id="clr2" onclick="copyClr(this.id)" autocomplete="off" spellcheck="false">
+
+                    <div id="colorPickerRight"></div>
+
+                </div>
+
+            </div>
+
+            <div class="rightArr"><i class="fa-solid fa-angle-right" id="arright"></i></div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="container">
+            <div class="css">
+                CSS Code
+            </div>
+
+
+            <textarea type="text" class="code" id="inp">background-image : linear-gradient(to right, #1A2980, #26D0CE);</textarea>
+
+            <div onclick="copyCode()" class="copy" id="copyBtn">COPY</div>
+        </div>
+    </aside>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
